@@ -1,5 +1,9 @@
 # ManagementTool
 
+## Summary
+- Project built with Angular 18, NgRX Signal Store, TailwindCSS, Angular Material and ngx-colors(color picker)
+- State is managed with NgRX and the application is relying heavily on Angular 18 features - signals, @-syntax, reactive forms
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
 
 ## Development server
