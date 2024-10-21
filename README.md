@@ -1,5 +1,13 @@
 # ManagementTool
 
+## Use cases implemented
+1. Loading data from a JSON file using httpClient
+2. Item creation form
+3. Edit existing Item
+4. Tile view
+5. Filter by search term
+6. Lazy loading items on scroll
+
 ## Summary
 - Project built with Angular 18, NgRX Signal Store, TailwindCSS, Angular Material and ngx-colors(color picker)
 - State is managed with NgRX and the application is relying heavily on Angular 18 features - signals, @-syntax, reactive forms
