@@ -1,0 +1,182 @@
+[
+  {
+    "id": "1",
+    "color": "#66D2A8",
+    "name": "Car accident",
+    "description": "A traffic incident resulting in damage or injury.",
+    "createDate": "2021-02-03T00:00:00Z",
+    "lastUpdateDate": "2021-02-03T00:00:00Z",
+    "createdBy": "Ori Lugasi"
+  },
+  {
+    "id": "2",
+    "color": "#FF00FF",
+    "name": "Human trafficking for prostitution",
+    "description": "The illegal trade of humans for exploitation, particularly in the sex industry.",
+    "createDate": "2021-01-26T00:00:00Z",
+    "lastUpdateDate": "2021-01-26T00:00:00Z",
+    "createdBy": "Ran Shim"
+  },
+  {
+    "id": "3",
+    "color": "#8B0000",
+    "name": "Murder",
+    "description": "The unlawful killing of another person with intent.",
+    "createDate": "2021-10-16T00:00:00Z",
+    "lastUpdateDate": "2021-10-16T00:00:00Z",
+    "createdBy": "Chen Meir"
+  },
+  {
+    "id": "4",
+    "color": "#FFA500",
+    "name": "Suspect",
+    "description": "An individual suspected of being involved in a crime or incident.",
+    "createDate": "2021-09-01T00:00:00Z",
+    "lastUpdateDate": "2021-12-24T00:00:00Z",
+    "createdBy": "Or Bar"
+  },
+  {
+    "id": "5",
+    "color": "#FFD700",
+    "name": "Terrorist",
+    "description": "An individual involved in acts of terror, often targeting civilians.",
+    "createDate": "2021-11-30T00:00:00Z",
+    "lastUpdateDate": "2021-11-30T00:00:00Z",
+    "createdBy": "Chen Meir"
+  },
+  {
+    "id": "6",
+    "color": "#FF0000",
+    "name": "Terrorist attack",
+    "description": "An act of violence aimed at causing terror, usually targeting civilians or symbols of power.",
+    "createDate": "2020-08-09T00:00:00Z",
+    "lastUpdateDate": "2021-02-03T00:00:00Z",
+    "createdBy": "Or Bar"
+  },
+  {
+    "id": "7",
+    "color": "#8A2BE2",
+    "name": "Burglary",
+    "description": "Illegal entry into a building with intent to commit a crime.",
+    "createDate": "2022-01-10T00:00:00Z",
+    "lastUpdateDate": "2022-01-10T00:00:00Z",
+    "createdBy": "Alice Brown"
+  },
+  {
+    "id": "8",
+    "color": "#5F9EA0",
+    "name": "Fraud",
+    "description": "Wrongful or criminal deception intended to result in financial or personal gain.",
+    "createDate": "2022-02-14T00:00:00Z",
+    "lastUpdateDate": "2022-02-14T00:00:00Z",
+    "createdBy": "Bob Smith"
+  },
+  {
+    "id": "9",
+    "color": "#7FFF00",
+    "name": "Cybercrime",
+    "description": "Criminal activities carried out by means of computers or the internet.",
+    "createDate": "2022-03-15T00:00:00Z",
+    "lastUpdateDate": "2022-03-15T00:00:00Z",
+    "createdBy": "Charlie Davis"
+  },
+  {
+    "id": "10",
+    "color": "#D2691E",
+    "name": "Arson",
+    "description": "The criminal act of deliberately setting fire to property.",
+    "createDate": "2022-04-18T00:00:00Z",
+    "lastUpdateDate": "2022-04-18T00:00:00Z",
+    "createdBy": "Dana Lee"
+  },
+  {
+    "id": "11",
+    "color": "#FF7F50",
+    "name": "Domestic violence",
+    "description": "Abuse or violence within a domestic setting.",
+    "createDate": "2022-05-21T00:00:00Z",
+    "lastUpdateDate": "2022-05-21T00:00:00Z",
+    "createdBy": "Eva Green"
+  },
+  {
+    "id": "12",
+    "color": "#6495ED",
+    "name": "Embezzlement",
+    "description": "Theft or misappropriation of funds placed in one's trust.",
+    "createDate": "2022-06-22T00:00:00Z",
+    "lastUpdateDate": "2022-06-22T00:00:00Z",
+    "createdBy": "Frank Harris"
+  },
+  {
+    "id": "13",
+    "color": "#DC143C",
+    "name": "Kidnapping",
+    "description": "The unlawful act of taking someone away by force.",
+    "createDate": "2022-07-25T00:00:00Z",
+    "lastUpdateDate": "2022-07-25T00:00:00Z",
+    "createdBy": "George White"
+  },
+  {
+    "id": "14",
+    "color": "#00008B",
+    "name": "Drug trafficking",
+    "description": "Illegal production, distribution, or sale of drugs.",
+    "createDate": "2022-08-29T00:00:00Z",
+    "lastUpdateDate": "2022-08-29T00:00:00Z",
+    "createdBy": "Hannah King"
+  },
+  {
+    "id": "15",
+    "color": "#008B8B",
+    "name": "Money laundering",
+    "description": "The process of concealing the origins of illegally obtained money.",
+    "createDate": "2022-09-30T00:00:00Z",
+    "lastUpdateDate": "2022-09-30T00:00:00Z",
+    "createdBy": "Ivy Turner"
+  },
+  {
+    "id": "16",
+    "color": "#B8860B",
+    "name": "Assault",
+    "description": "A physical attack on another person.",
+    "createDate": "2022-10-05T00:00:00Z",
+    "lastUpdateDate": "2022-10-05T00:00:00Z",
+    "createdBy": "Jackie Wood"
+  },
+  {
+    "id": "17",
+    "color": "#A9A9A9",
+    "name": "Vandalism",
+    "description": "Deliberate destruction or damage to property.",
+    "createDate": "2022-11-12T00:00:00Z",
+    "lastUpdateDate": "2022-11-12T00:00:00Z",
+    "createdBy": "Kevin Scott"
+  },
+  {
+    "id": "18",
+    "color": "#006400",
+    "name": "Theft",
+    "description": "The act of stealing someone else's property.",
+    "createDate": "2022-12-01T00:00:00Z",
+    "lastUpdateDate": "2022-12-01T00:00:00Z",
+    "createdBy": "Liam Adams"
+  },
+  {
+    "id": "19",
+    "color": "#8B008B",
+    "name": "Forgery",
+    "description": "The act of creating a false document with the intent to deceive.",
+    "createDate": "2023-01-15T00:00:00Z",
+    "lastUpdateDate": "2023-01-15T00:00:00Z",
+    "createdBy": "Mia Evans"
+  },
+  {
+    "id": "20",
+    "color": "#FF8C00",
+    "name": "Robbery",
+    "description": "The act of taking property unlawfully from a person by force.",
+    "createDate": "2023-02-17T00:00:00Z",
+    "lastUpdateDate": "2023-02-17T00:00:00Z",
+    "createdBy": "Noah Mitchell"
+  }
+]

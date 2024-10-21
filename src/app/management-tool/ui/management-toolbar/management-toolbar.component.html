@@ -1,0 +1,22 @@
+<div class="flex gap-6">
+  <button mat-icon-button (click)="onDisplayChange('tiles')">
+    <mat-icon
+      class="scale-[1.18] hover:text-slate-600 active:text-slate-700"
+      [ngClass]="display() === 'tiles' ? 'text-sky-500' : 'text-slate-500'"
+      >grid_view</mat-icon
+    >
+  </button>
+  <button mat-icon-button (click)="onDisplayChange('list')">
+    <mat-icon
+      class="scale-[1.5] hover:text-slate-600 active:text-slate-700"
+      [ngClass]="display() === 'list' ? 'text-sky-500' : 'text-slate-500'"
+      >view_list</mat-icon
+    >
+  </button>
+  <button mat-icon-button (click)="onAddItem()">
+    <mat-icon
+      class="text-slate-500 scale-[1.8] hover:text-slate-600 active:text-slate-700 rounded-full shadow"
+      >add_circle</mat-icon
+    >
+  </button>
+</div>

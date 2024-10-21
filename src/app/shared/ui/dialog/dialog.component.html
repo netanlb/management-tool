@@ -1,0 +1,11 @@
+<div class="p-6 shadow-lg">
+  <header class="flex justify-between mb-8">
+    <span class="text-xl font-medium text-sky-900">{{ title() }}</span>
+    <mat-icon class="text-slate-600 cursor-pointer" (click)="handleClose()"
+      >close</mat-icon
+    >
+  </header>
+  <div>
+    <ng-content></ng-content>
+  </div>
+</div>

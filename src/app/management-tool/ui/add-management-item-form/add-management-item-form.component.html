@@ -1,0 +1,59 @@
+<app-dialog [title]="data.title" (onClose)="onClose()">
+  <form [formGroup]="form" (ngSubmit)="handleSubmit()">
+    <div class="flex justify-between gap-4 items-center">
+      <mat-form-field class="w-full">
+        <mat-label>Name</mat-label>
+        <input
+          matInput
+          formControlName="name"
+          type="text"
+          placeholder="Type tag name..."
+        />
+      </mat-form-field>
+
+      <span
+        class="flex gap-2 items-center p-3 mb-5 rounded rounded-b-none border border-b-black bg-[#e0e2ec] h-full"
+        [ngClass]="{
+          'text-red-700': submitted && form.controls.color.invalid,
+          'border-b-red-700': submitted && form.controls.color.invalid
+        }"
+      >
+        <span class="text-sm">Color*</span>
+        <ngx-colors
+          ngx-colors-trigger
+          formControlName="color"
+          [hideTextInput]="true"
+          [format]="'hex'"
+        ></ngx-colors>
+      </span>
+    </div>
+
+    <mat-form-field class="w-full">
+      <mat-label>Description</mat-label>
+      <textarea
+        rows="6"
+        matInput
+        formControlName="description"
+        type="text"
+        placeholder="Type tag description..."
+      ></textarea>
+    </mat-form-field>
+    <div class="flex justify-end gap-2 mt-4">
+      <button mat-button color="secondary" (click)="onClose()">cancel</button>
+      <ng-container
+        [ngTemplateOutlet]="data.action === 'add' ? addButton : editButton"
+      ></ng-container>
+    </div>
+  </form>
+</app-dialog>
+
+<ng-template #editButton
+  ><button type="submit" mat-flat-button color="primary">
+    <mat-icon matPrefix>save</mat-icon>Save
+  </button></ng-template
+>
+<ng-template #addButton
+  ><button type="submit" mat-flat-button color="primary">
+    <mat-icon matPrefix>add_circle</mat-icon>Add
+  </button></ng-template
+>

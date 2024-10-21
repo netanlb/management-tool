@@ -1,0 +1,21 @@
+<div
+  class="bg-white flex flex-row items-center text-lg font-light h-16 p-4 mt-2 mb-2 shadow-md rounded-md text-slate-600 hover:bg-slate-200 hover:cursor-pointer active:bg-slate-300"
+>
+  <!-- color -->
+  <span class="w-1/12">
+    <div
+      [ngStyle]="{ backgroundColor: item().color }"
+      class="w-7 h-7 rounded-md"
+    ></div
+  ></span>
+  <!-- name -->
+  <span class="w-5/12 text-nowrap overflow-hidden text-ellipsis">{{
+    item().name
+  }}</span>
+  <!-- create date -->
+  <span class="w-2/12">{{ item().createDate | date : "dd/MM/YYYY" }}</span>
+  <!-- last update date -->
+  <span class="w-2/12">{{ item().lastUpdateDate | date : "dd/MM/YYYY" }}</span>
+  <!-- created by -->
+  <span class="w-2/12">{{ item().createdBy }}</span>
+</div>

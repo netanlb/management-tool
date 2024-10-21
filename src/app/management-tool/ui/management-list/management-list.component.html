@@ -1,0 +1,24 @@
+@if (display() === 'list') {
+<header class="w-full flex flex-row items-end font-medium pr-4 pl-4">
+  <span class="w-1/12"> Color</span>
+  <span class="w-5/12">Name</span>
+  <span class="w-2/12">Create Date</span>
+  <span class="w-2/12">Last Update Date</span>
+  <span class="w-2/12">Created By</span>
+</header>
+} @if (items().length) {
+<ul class="w-full mb-5">
+  @if (display() === 'tiles') {
+  <div class="mx-auto grid grid-cols-7 gap-4">
+    @for (item of items(); track item.id) {
+    <app-management-item-tile [item]="item" (click)="onEditItem(item)" />}
+  </div>
+  } @else { @for (item of items(); track item.id) {
+  <app-management-item [item]="item" (click)="onEditItem(item)" />
+  } }
+</ul>
+} @else if(!loading()) {
+<div class="w-full p-4 text-lg text-slate-600 bg-slate-200 mt-4 rounded-md">
+  No data to show...
+</div>
+}

@@ -1,0 +1,29 @@
+<div class="container mx-auto flex flex-col gap-6 self-center p-16 h-full">
+  <header class="flex justify-between">
+    <span class="text-sky-900 font-medium text-2xl">Management Tool</span>
+    <app-management-toolbar
+      [display]="store.display()"
+      (onItemAdded)="onAddedItem($event)"
+      (displayChange)="onDisplayChange($event)"
+    />
+  </header>
+
+  <section class="flex flex-col gap-1">
+    <app-search-input
+      (searchTermChange)="onSearchChange($event)"
+    ></app-search-input>
+
+    <app-management-list
+      [items]="store.filteredItems()"
+      [display]="store.display()"
+      [loading]="store.loading()"
+      (onItemEdited)="onEditedItem($event)"
+    ></app-management-list>
+
+    @if (store.loading()) {
+    <div class="flex items-center gap-2 text-lg text-sky-900">
+      <mat-spinner [diameter]="25"></mat-spinner><span>Loading...</span>
+    </div>
+    }
+  </section>
+</div>
