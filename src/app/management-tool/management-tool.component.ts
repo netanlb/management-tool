@@ -26,7 +26,7 @@ export default class ManagementToolComponent {
   public store = inject(ManagementToolStore);
 
   public ngOnInit(): void {
-    this.store.lazyLoad();
+    this.initialLoad();
   }
 
   public onAddedItem(item: Partial<ManagementItem>): void {
@@ -46,7 +46,7 @@ export default class ManagementToolComponent {
   }
 
   @HostListener('window:scroll', [])
-  onScroll(): void {
+  private onScroll(): void {
     if (this.store.loading() || this.store.allItemsLoaded()) {
       return;
     }
@@ -55,8 +55,30 @@ export default class ManagementToolComponent {
     const threshold = document.body.offsetHeight - 100;
 
     if (scrollPosition >= threshold) {
-      console.log('Scrolled down');
       this.store.lazyLoad();
     }
+  }
+
+  private initialLoad(): void {
+    this.store.lazyLoad();
+
+    setTimeout(() => {
+      if (this.isMoreDataNeeded()) {
+        this.initialLoad();
+      }
+    }, 1200);
+  }
+
+  private isMoreDataNeeded(): boolean {
+    // If the content height is less than the viewport height, load more items
+
+    const contentHeight = document.body.scrollHeight;
+    const viewportHeight = window.innerHeight;
+
+    return (
+      contentHeight <= viewportHeight &&
+      !this.store.loading() &&
+      !this.store.allItemsLoaded()
+    );
   }
 }
