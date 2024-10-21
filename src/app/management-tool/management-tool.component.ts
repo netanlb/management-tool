@@ -45,19 +45,6 @@ export default class ManagementToolComponent {
     this.store.updateDisplay(display);
   }
 
-  private isMoreDataNeed(): boolean {
-    // If the content height is less than the viewport height, load more items
-
-    const contentHeight = document.body.scrollHeight;
-    const viewportHeight = window.innerHeight;
-
-    return (
-      contentHeight <= viewportHeight &&
-      !this.store.loading() &&
-      !this.store.allItemsLoaded()
-    );
-  }
-
   @HostListener('window:scroll', [])
   private onScroll(): void {
     if (this.store.loading() || this.store.allItemsLoaded()) {
@@ -76,9 +63,22 @@ export default class ManagementToolComponent {
     this.store.lazyLoad();
 
     setTimeout(() => {
-      if (this.isMoreDataNeed()) {
+      if (this.isMoreDataNeeded()) {
         this.initialLoad();
       }
     }, 1200);
+  }
+
+  private isMoreDataNeeded(): boolean {
+    // If the content height is less than the viewport height, load more items
+
+    const contentHeight = document.body.scrollHeight;
+    const viewportHeight = window.innerHeight;
+
+    return (
+      contentHeight <= viewportHeight &&
+      !this.store.loading() &&
+      !this.store.allItemsLoaded()
+    );
   }
 }

@@ -178,5 +178,203 @@
     "createDate": "2023-02-17T00:00:00Z",
     "lastUpdateDate": "2023-02-17T00:00:00Z",
     "createdBy": "Noah Mitchell"
+  },
+  {
+    "id": "21",
+    "color": "#556B2F",
+    "name": "Environmental Violation",
+    "description": "Activities that harm the environment, such as illegal dumping or pollution.",
+    "createDate": "2025-01-01T00:00:00Z",
+    "lastUpdateDate": "2025-01-01T00:00:00Z",
+    "createdBy": "Emma Watson"
+  },
+  {
+    "id": "22",
+    "color": "#FF4500",
+    "name": "Shoplifting",
+    "description": "The act of stealing goods from a retail establishment.",
+    "createDate": "2023-04-01T00:00:00Z",
+    "lastUpdateDate": "2023-04-01T00:00:00Z",
+    "createdBy": "Oliver Stone"
+  },
+  {
+    "id": "23",
+    "color": "#2E8B57",
+    "name": "Illegal Parking",
+    "description": "Parking a vehicle in a restricted area or in a hazardous manner.",
+    "createDate": "2023-05-12T00:00:00Z",
+    "lastUpdateDate": "2023-05-12T00:00:00Z",
+    "createdBy": "Samantha Hill"
+  },
+  {
+    "id": "24",
+    "color": "#4682B4",
+    "name": "Bribery",
+    "description": "Offering, giving, receiving, or soliciting something of value to influence an action.",
+    "createDate": "2023-06-23T00:00:00Z",
+    "lastUpdateDate": "2023-06-23T00:00:00Z",
+    "createdBy": "Robert Brown"
+  },
+  {
+    "id": "25",
+    "color": "#D2B48C",
+    "name": "Public Intoxication",
+    "description": "Being visibly drunk or intoxicated in a public place.",
+    "createDate": "2023-07-04T00:00:00Z",
+    "lastUpdateDate": "2023-07-04T00:00:00Z",
+    "createdBy": "Carla White"
+  },
+  {
+    "id": "26",
+    "color": "#FF1493",
+    "name": "Trespassing",
+    "description": "Entering another person's property without permission.",
+    "createDate": "2023-08-15T00:00:00Z",
+    "lastUpdateDate": "2023-08-15T00:00:00Z",
+    "createdBy": "Nathan Gray"
+  },
+  {
+    "id": "27",
+    "color": "#00CED1",
+    "name": "Identity Fraud",
+    "description": "Using another individual's identity for fraudulent purposes.",
+    "createDate": "2023-09-26T00:00:00Z",
+    "lastUpdateDate": "2023-09-26T00:00:00Z",
+    "createdBy": "Emily Green"
+  },
+  {
+    "id": "28",
+    "color": "#9400D3",
+    "name": "Extortion",
+    "description": "Obtaining something through force or threats.",
+    "createDate": "2023-10-05T00:00:00Z",
+    "lastUpdateDate": "2023-10-05T00:00:00Z",
+    "createdBy": "Victor Brown"
+  },
+  {
+    "id": "29",
+    "color": "#00BFFF",
+    "name": "Illegal Dumping",
+    "description": "The unauthorized disposal of waste materials.",
+    "createDate": "2023-11-18T00:00:00Z",
+    "lastUpdateDate": "2023-11-18T00:00:00Z",
+    "createdBy": "Laura Smith"
+  },
+  {
+    "id": "30",
+    "color": "#FF6347",
+    "name": "Tax Evasion",
+    "description": "The illegal act of not paying taxes owed.",
+    "createDate": "2023-12-01T00:00:00Z",
+    "lastUpdateDate": "2023-12-01T00:00:00Z",
+    "createdBy": "Paul Johnson"
+  },
+  {
+    "id": "31",
+    "color": "#4169E1",
+    "name": "Perjury",
+    "description": "Lying under oath during legal proceedings.",
+    "createDate": "2024-01-14T00:00:00Z",
+    "lastUpdateDate": "2024-01-14T00:00:00Z",
+    "createdBy": "Sophia Davis"
+  },
+  {
+    "id": "32",
+    "color": "#8A2BE2",
+    "name": "Counterfeiting",
+    "description": "The production of imitation money, goods, or documents with intent to deceive.",
+    "createDate": "2024-02-20T00:00:00Z",
+    "lastUpdateDate": "2024-02-20T00:00:00Z",
+    "createdBy": "Daniel White"
+  },
+  {
+    "id": "33",
+    "color": "#DA70D6",
+    "name": "Public Disorder",
+    "description": "Conduct that disrupts public order, such as rioting or disturbing the peace.",
+    "createDate": "2024-03-08T00:00:00Z",
+    "lastUpdateDate": "2024-03-08T00:00:00Z",
+    "createdBy": "Isabella Martin"
+  },
+  {
+    "id": "34",
+    "color": "#FFD700",
+    "name": "Corruption",
+    "description": "Dishonest or fraudulent conduct by those in power, typically involving bribery.",
+    "createDate": "2024-04-15T00:00:00Z",
+    "lastUpdateDate": "2024-04-15T00:00:00Z",
+    "createdBy": "Alex Moore"
+  },
+  {
+    "id": "35",
+    "color": "#7CFC00",
+    "name": "Forgery",
+    "description": "Creating or altering a document with the intent to defraud.",
+    "createDate": "2024-05-23T00:00:00Z",
+    "lastUpdateDate": "2024-05-23T00:00:00Z",
+    "createdBy": "Chloe Adams"
+  },
+  {
+    "id": "36",
+    "color": "#FF4500",
+    "name": "Resisting Arrest",
+    "description": "Attempting to evade or resist being taken into custody by law enforcement.",
+    "createDate": "2024-06-30T00:00:00Z",
+    "lastUpdateDate": "2024-06-30T00:00:00Z",
+    "createdBy": "Ethan Johnson"
+  },
+  {
+    "id": "37",
+    "color": "#48D1CC",
+    "name": "Animal Cruelty",
+    "description": "Intentionally causing harm or suffering to animals.",
+    "createDate": "2024-07-11T00:00:00Z",
+    "lastUpdateDate": "2024-07-11T00:00:00Z",
+    "createdBy": "Lily Roberts"
+  },
+  {
+    "id": "38",
+    "color": "#B22222",
+    "name": "Stalking",
+    "description": "Repeated and unwanted attention or harassment of another person.",
+    "createDate": "2024-08-01T00:00:00Z",
+    "lastUpdateDate": "2024-08-01T00:00:00Z",
+    "createdBy": "Lucas Nelson"
+  },
+  {
+    "id": "39",
+    "color": "#1E90FF",
+    "name": "Voter Fraud",
+    "description": "Illegal interference with the process of an election.",
+    "createDate": "2024-09-20T00:00:00Z",
+    "lastUpdateDate": "2024-09-20T00:00:00Z",
+    "createdBy": "Grace Walker"
+  },
+  {
+    "id": "40",
+    "color": "#FF69B4",
+    "name": "Child Endangerment",
+    "description": "Putting a child in a situation where their safety is at risk.",
+    "createDate": "2024-10-10T00:00:00Z",
+    "lastUpdateDate": "2024-10-10T00:00:00Z",
+    "createdBy": "Aiden Harris"
+  },
+  {
+    "id": "41",
+    "color": "#BA55D3",
+    "name": "Obstruction of Justice",
+    "description": "Interfering with the operations of law enforcement or judicial systems.",
+    "createDate": "2024-11-02T00:00:00Z",
+    "lastUpdateDate": "2024-11-02T00:00:00Z",
+    "createdBy": "Zoe Lewis"
+  },
+  {
+    "id": "42",
+    "color": "#2F4F4F",
+    "name": "Unlawful Assembly",
+    "description": "A gathering of people for illegal purposes or in violation of legal restrictions.",
+    "createDate": "2024-12-15T00:00:00Z",
+    "lastUpdateDate": "2024-12-15T00:00:00Z",
+    "createdBy": "Mason Baker"
   }
 ]
