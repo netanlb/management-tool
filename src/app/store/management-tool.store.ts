@@ -15,6 +15,9 @@ type ManagementToolState = {
   loading: boolean;
   filter: string;
   display: 'tiles' | 'list';
+  page: number;
+  pageSize: number;
+  allItemsLoaded: boolean;
 };
 
 const initialState: ManagementToolState = {
@@ -22,6 +25,9 @@ const initialState: ManagementToolState = {
   loading: false,
   filter: '',
   display: 'list',
+  page: 1,
+  pageSize: 10,
+  allItemsLoaded: false,
 };
 
 export const ManagementToolStore = signalStore(
@@ -29,15 +35,21 @@ export const ManagementToolStore = signalStore(
   withState(initialState),
   withMethods(
     (store, managementToolService = inject(ManagementToolService)) => ({
-      loadAll() {
+      lazyLoad() {
         patchState(store, { loading: true });
 
         managementToolService
-          .getItems()
+          .getItems(store.page(), store.pageSize())
           .pipe(
-            tap((items) => {
-              patchState(store, { items });
-            }),
+            tap(
+              (data: { items: ManagementItem[]; allItemsLoaded: boolean }) => {
+                patchState(store, {
+                  items: [...store.items(), ...data.items],
+                  page: store.page() + 1,
+                  allItemsLoaded: data.allItemsLoaded,
+                });
+              }
+            ),
             catchError((error) => {
               console.error('Failed to load items:', error);
               return of(null);
