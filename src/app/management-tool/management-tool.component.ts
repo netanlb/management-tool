@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
 import { ManagementToolStore } from '../store/management-tool.store';
 import { ManagementItem } from './models/management-tool-item.model';
 import { JsonPipe } from '@angular/common';
@@ -26,7 +26,7 @@ export default class ManagementToolComponent {
   public store = inject(ManagementToolStore);
 
   public ngOnInit(): void {
-    this.store.loadAll();
+    this.store.lazyLoad();
   }
 
   public onAddedItem(item: Partial<ManagementItem>): void {
@@ -43,5 +43,20 @@ export default class ManagementToolComponent {
 
   public onDisplayChange(display: 'tiles' | 'list'): void {
     this.store.updateDisplay(display);
+  }
+
+  @HostListener('window:scroll', [])
+  onScroll(): void {
+    if (this.store.loading() || this.store.allItemsLoaded()) {
+      return;
+    }
+
+    const scrollPosition = window.innerHeight + window.scrollY;
+    const threshold = document.body.offsetHeight - 100;
+
+    if (scrollPosition >= threshold) {
+      console.log('Scrolled down');
+      this.store.lazyLoad();
+    }
   }
 }
