@@ -1,15 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { ManagementItem } from '../models/management-tool-item.model';
-import {
-  BehaviorSubject,
-  delay,
-  map,
-  Observable,
-  of,
-  tap,
-  throwError,
-} from 'rxjs';
+import { BehaviorSubject, delay, map, Observable, of, tap } from 'rxjs';
 
 //  This service is simulating an external API access(CRUD operations)
 //  It simulates backend operations as well, such as creating a unique ID, updating the update/creation date
