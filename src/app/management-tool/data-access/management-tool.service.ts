@@ -49,7 +49,7 @@ export class ManagementToolService {
     const currentItems = this.items$.value;
 
     // simulate item creation in the BE
-    const id = currentItems[currentItems.length - 1].id + 1;
+    const id = '' + new Date().getTime();
     const newItem = {
       ...item,
       id,
